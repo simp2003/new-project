@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Porters — simp2003</title>
+  <meta name="description" content="Porters — a lightweight portfolio by simp2003" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">Porters</a>
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+      <nav id="mainNav" class="nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <h1>Porters</h1>
+      <p class="lead">Handcrafted work by simp2003 — small, fast, and accessible.</p>
+      <p><a class="cta" href="#projects">See projects</a></p>
+    </section>
+
+    <section id="about" class="container">
+      <h2>About</h2>
+      <p>Hi — I’m simp2003. This is Porters, a minimal portfolio to showcase projects and contact info. Customize it with your content, colors, and images.</p>
+    </section>
+
+    <section id="projects" class="container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Project Alpha</h3>
+          <p>Short description of the project and the role you played.</p>
+        </article>
+        <article class="card">
+          <h3>Project Beta</h3>
+          <p>Short description. Add links or images to highlight work.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Contact</h2>
+      <form id="contactForm" novalidate>
+        <label>
+          Name
+          <input name="name" type="text" required />
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4"></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Porters — Built by simp2003</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
